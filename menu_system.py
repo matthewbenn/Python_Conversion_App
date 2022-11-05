@@ -14,6 +14,10 @@ def menu(name):
         display_menu()
         menu_choice = int(input('Enter your selection: '))
         print()
+        if menu_choice not in range(7):
+            print('You must enter a valid menu number')
+            display_menu()
+            menu_choice = int(input('Enter your selection: '))
     except:
         print('You must enter a valid menu number')
         display_menu()
@@ -55,11 +59,15 @@ def menu(name):
                     display_menu()
                     menu_choice = int(input('Enter your selection: '))
                     print()
+                    if menu_choice not in range(7):
+                        print('You must enter a valid menu number')
+                        display_menu()
+                        menu_choice = int(input('Enter your selection: '))
                 except:
                     print('You must enter a valid menu number')
                     display_menu()
                     menu_choice = int(input('Enter your selection: '))
-
+                    
         elif menu_choice == VOLUME_CHOICE:
             # ---Question 2---
             try:
@@ -95,6 +103,10 @@ def menu(name):
                     display_menu()
                     menu_choice = int(input('Enter your selection: '))
                     print()
+                    if menu_choice not in range(7):
+                        print('You must enter a valid menu number')
+                        display_menu()
+                        menu_choice = int(input('Enter your selection: '))
                 except:
                     print('You must enter a valid menu number')
                     display_menu()
@@ -137,11 +149,15 @@ def menu(name):
                     display_menu()
                     menu_choice = int(input('Enter your selection: '))
                     print()
+                    if menu_choice not in range(7):
+                        print('You must enter a valid menu number')
+                        display_menu()
+                        menu_choice = int(input('Enter your selection: '))
                 except:
                     print('You must enter a valid menu number')
                     display_menu()
                     menu_choice = int(input('Enter your selection: '))
-                
+                          
         elif menu_choice == LENGTH_CHOICE:
             # ---Question 4---
             try:
@@ -179,6 +195,10 @@ def menu(name):
                     display_menu()
                     menu_choice = int(input('Enter your selection: '))
                     print()
+                    if menu_choice not in range(7):
+                        print('You must enter a valid menu number')
+                        display_menu()
+                        menu_choice = int(input('Enter your selection: '))
                 except:
                     print('You must enter a valid menu number')
                     display_menu()
@@ -221,10 +241,15 @@ def menu(name):
                     display_menu()
                     menu_choice = int(input('Enter your selection: '))
                     print()
+                    if menu_choice not in range(7):
+                        print('You must enter a valid menu number')
+                        display_menu()
+                        menu_choice = int(input('Enter your selection: '))
                 except:
                     print('You must enter a valid menu number')
                     display_menu()
                     menu_choice = int(input('Enter your selection: '))
+        
     else:
         print()
         if menu_choice == QUIT_CHOICE:
